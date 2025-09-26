@@ -10,11 +10,27 @@
   <header class="game-header">
     <a class="home-link" href="../index.html">← Home</a>
     <h1>Game</h1>
+    <button id="statsBtn" class="stats-btn" aria-haspopup="dialog" aria-controls="statsPanel">📊 Stats</button>
   </header>
 
   <main class="game-container">
     <div id="grid" class="game-grid" role="grid" aria-label="16 by 16 grid"></div>
   </main>
+
+  <div id="statsPanel" class="stats-panel" role="dialog" aria-modal="true" aria-labelledby="statsTitle" hidden>
+    <div class="stats-content">
+      <div class="stats-header">
+        <h2 id="statsTitle">Game Stats</h2>
+        <button id="closeStats" class="close-btn" aria-label="Close stats">✖</button>
+      </div>
+      <div class="stats-body">
+        <div class="stat"><strong>Total Cell Clicks:</strong> <span id="statClicks">0</span></div>
+        <div class="stat"><strong>Total Time:</strong> <span id="statTime">0s</span></div>
+        <div class="stat"><strong>Sessions:</strong> <span id="statSessions">0</span></div>
+        <div class="stat"><strong>Last Opened:</strong> <span id="statLast">—</span></div>
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="./game.js"></script>
 </body>
