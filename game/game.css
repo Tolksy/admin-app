@@ -1,0 +1,39 @@
+.game-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.game-header .home-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(16, 28px);
+  grid-template-rows: repeat(16, 28px);
+  gap: 4px;
+  background: #f0f4f8;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cell {
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
