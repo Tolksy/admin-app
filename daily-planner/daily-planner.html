@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Planner • Entrepreneur Command Center</title>
+  <link rel="stylesheet" href="daily-planner.css" />
+</head>
+<body>
+  <header class="dp-header">
+    <a class="home-link" href="../index.html">← Home</a>
+    <a class="home-link" href="../calendar/calendar.html">📅 Calendar</a>
+    <div class="date-wrap">
+      <h1 id="dateLabel"></h1>
+      <div id="scoreBadge" class="score-badge">0%</div>
+    </div>
+    <button id="printBtn" class="print-btn">Print</button>
+  </header>
+
+  <main class="dp-container">
+    <section class="card">
+      <h2>Most Important Tasks</h2>
+      <div id="mitList" class="list"></div>
+      <div class="row">
+        <input id="mitInput" type="text" placeholder="Add MIT..."/>
+        <button id="addMitBtn">Add</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Habits</h2>
+      <label><input type="checkbox" id="habitExercise"/> Exercise</label>
+      <label><input type="checkbox" id="habitReading"/> Reading</label>
+      <label><input type="checkbox" id="habitPlanning"/> Planning</label>
+    </section>
+
+    <section class="card">
+      <h2>Reflections</h2>
+      <div class="col">
+        <label>Gratitude</label>
+        <textarea id="refGratitude" rows="3"></textarea>
+      </div>
+      <div class="col">
+        <label>Victories</label>
+        <textarea id="refVictories" rows="3"></textarea>
+      </div>
+      <div class="col">
+        <label>Lessons</label>
+        <textarea id="refLessons" rows="3"></textarea>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./daily-planner.js"></script>
+</body>
+</html>
+
